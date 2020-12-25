@@ -1,0 +1,19 @@
+h2,.abc{
+  color: blue;
+}
+
+p.def{
+  color: blueviolet;
+}
+
+main > h1{
+  color: brown;
+}
+
+header h1{
+  color: pink;
+}
+
+p + p {
+  border-bottom: 2px solid blue;
+}

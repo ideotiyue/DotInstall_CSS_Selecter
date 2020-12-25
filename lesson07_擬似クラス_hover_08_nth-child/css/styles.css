@@ -1,0 +1,28 @@
+.btn {
+  width: 100px;
+  background: skyblue;
+  text-align: center;
+  padding: 4px;
+  color: white;
+  /* ポインターの種類を変える */
+  cursor: pointer;
+}
+/* カーソルが上に来た時に透過する */
+.btn:hover {
+  opacity: 0.8;
+}
+main > :first-child{
+background-color: pink;
+}
+main > :last-child{
+  background-color: powderblue;
+}
+main >:nth-child(3n){
+  color: red;
+}
+section.even1 > :nth-child(even){
+  background-color: salmon;
+}
+section.odd2 > :nth-child(odd){
+  background-color: royalblue;
+}

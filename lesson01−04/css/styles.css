@@ -1,0 +1,41 @@
+h2 {
+  color: aqua;
+}
+
+.abc {
+  color: blue;
+}
+
+#def {
+ color: chartreuse;
+}
+/* 挙動確認用 */
+
+/* * {
+  font-size: 12px;
+}   */
+
+/* [target] { 
+  font-weight: bold;
+  color: red;
+} */
+
+/* [href="#top"] {
+  font-weight: bold;
+  color: aqua;
+} */
+
+/* [href^="https"] {
+  font-weight: bold;
+  color: blueviolet;
+} */
+
+/* [href$="dotinstall"] {
+  font-weight: bold;
+  color: orange;
+} */
+
+/* [href*="com"] {
+  font-weight: bold;
+  color: green;
+} */

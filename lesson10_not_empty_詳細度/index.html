@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSSセレクター編">
+  <title>CSSセレクター</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>:empty</h1>
+    <p>
+      空の項目を取得する時に使う。空白、改行は空の項目とみなされない。<br>
+      コメントは空の項目とみなされる。
+    </p>
+    <ul>
+      <li>項目</li>
+      <li></li>
+      <li> </li>
+      <li>
+        
+      </li>
+      <li><!-- コメント --></li>
+      <li>項目</li>
+    </ul>
+    <h1>:not()</h1>
+    <p>
+      ()の中身以外のものを選択する時に使う。
+    </p>
+    <ol class="notlist">
+      <li>項目</li>
+      <li></li>
+      <li> </li>
+      <li>
+        
+      </li>
+      <li><!-- コメント --></li>
+      <li>項目</li>
+    </ol>
+
+    <h1>詳細度</h1>
+    <p>
+      詳細度とは、CSSの指示が重複した場合にどのスタイルを適用するかを決めるもの。<br>
+      セレクターに 3 つのスコアを与えていくことで計算する。<br>
+      下記の１〜３のスコア（数）のトータルではなく、１の合計＞２の合計＞３の合計といった順で優先される。
+      <ol>
+        <li>idの数</li>
+        <li>class、属性、擬似クラスセレクターの数</li>
+        <li>要素、擬似要素セレクターの数</li>
+      </ol>
+      <img src="../img/deteal.png" width="600px" height="300px">
+    </p>
+    <!-- 詳細度確認用 -->
+    <section id="about">
+      <h1 id="main" class="title box">
+        スタイルタグなし</h1>
+
+      <h1 id="main" class="title box" style="color: skyblue;">
+        スタイルタグあり</h1>
+      
+      </section>
+      
+      <h2>important</h2>
+      <p>!importantをつけるとスタイル属性に書いたスタイルよりも優先される</p>
+</body>
+</html>

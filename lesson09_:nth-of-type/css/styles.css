@@ -1,0 +1,7 @@
+main > h1:nth-of-type(even){
+ color: aqua; 
+}
+
+main > h2:nth-of-type(2n){
+  background-color: salmon;
+}

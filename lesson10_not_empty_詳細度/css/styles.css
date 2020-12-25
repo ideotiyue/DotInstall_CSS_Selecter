@@ -1,0 +1,21 @@
+ul > li:empty{
+  background-color: aquamarine;
+}
+
+ol.notlist > li:not(:empty){
+  background-color: salmon;
+}
+
+#about > #main { color: gray; }
+section > h1 { color: red; }
+section > h1#main.box { color: yellow ; }
+section > #main.title { color: blue; }
+section#about > h1 { color: pink; }
+
+
+/* ▼!important確認用 */
+/* #about > #main { color: gray; }
+section > h1 { color: red !important; }
+section > h1#main.box { color: yellow ; }
+section > #main.title { color: blue; }
+section#about > h1 { color: pink; } */

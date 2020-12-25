@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSSセレクター編">
+  <title>CSSセレクター</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>セレクターとは</h1>
+    <img src="../img/selecter01.png" width="600px" height="300px">
+  <h1>セレクターの種類</h1>
+    <img src="../img/selecter02.png" width="600px" height="300px">
+    <h2>要素型セレクター</h2>
+    <p>
+      デザインを加えたい要素に指定する<br>
+      （この場合はh2 に対して color: apua; )
+    </p>
+
+    <h2 class="abc">classセレクター</h2>
+    <p>
+      . のあとに class 属性の値を書く。<br>
+      スペースで区切って複数値を入れることも可能。<br>
+      class 属性だと h1 をあとで h2 に変更する必要があったとしても、セレクターを修正する必要もない／他の要素にも同じスタイルを付けることができる。
+    </p>
+
+    <h2 id="def">idセレクター</h2>
+    <p>
+      # のあとに id 属性の値を書く。<br>
+      id 属性には空白を含めてはいけないので、class 属性のように複数の値は指定できない。<br>
+      id 属性は同じページ内で同じ値を使ってはいけない。<br>
+      例えば別の要素h1 に同じid属性を付けるといったことはできない。
+    </p>
+    
+    <h2>全称セレクター</h2>
+    <p>
+      * を使えばすべての要素に適用される
+    </p>
+
+  <h1>属性セレクター</h1>
+    <p>属性の値に応じて要素を選択するためのセレクターです。</p>
+    <img src="../img/attr.png" width="600px" height="300px">
+    <ul>
+      <li><a href="https://dotinstall.com" target="_blank">
+        ターゲット属性あり、httpsで始まる、末尾はdotinstall以外、comを含む</a></li>
+      <li><a href="https://twitter.com/dotinstall" target="_blank">
+        ターゲット属性あり、httpsで始まる、末尾がdotinstallで終わる、comを含む</a></li>
+      <li><a href="https://facebook.com/dotinstall">
+        ターゲット属性なし、httpsで始まる、末尾がdotinstallで終わる、comを含む</a></li>
+      <li><a href="#top">
+        ターゲット属性なし、httpsで始まらない、末尾はdotinstall以外、comを含まない
+      </a></li>
+    </ul>
+
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSSセレクター編">
+  <title>CSSセレクター</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1 data-subtitle=" ☆メインタイトル">疑似要素</h1>
+    <p>
+      擬似要素を使うと要素の特定の部分をスタイリングすることができる
+    </p>
+    <h2 data-subtitle=" ☆サブタイトル">::before</h2>
+    <p>
+      要素の前にスタイルをつけることができる。
+      content プロパティで追加したい内容を指定する。
+    </p>
+    <h2 data-subtitle=" ☆サブタイトル">::after</h2>
+    <p>
+      要素の後にスタイルをつけることができる
+    </p>
+    
+  <h1 data-subtitle=" ☆メインタイトル">カスタムデータ属性</h1>
+    <p>
+      HTML では data- で始まっていれば、独自の属性を付けても良いよ、というルールになっています。<br>
+      つまり、スタイルを別々に指定する方法もありますが、 content 属性の値を要素によって変えたい場合、HTML の要素にデータを持たせておいて、それを使うことも可能。<br>
+      こういった独自の属性のことをカスタムデータ属性と呼ぶ。<br>
+    </p>
+    <h2>使い方</h2>
+    <p>
+      ①要素に「data-」で始まる属性名をつける。<br>
+      ②CSSに「content: attr(data-○○○);」と書く
+    </p>
+    <h2>attr()</h2>
+    <p>attributive（属性の）の短縮形。HTML要素の様々な属性の値を取得する</p>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="discription" content="ドットインストール詳細CSSセレクター編">
+  <title>CSSセレクター</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <h1>セレクターの組み合わせ</h1>
+    <img src="../img/addSelecter.png" width="600px" height="300px">
+  <h1>セレクターを組み合わせる書き方</h1>
+    <h2>h2,.abc</h2>
+    <p class="abc">
+      h2と.abcに同じスタイルを適用させる<br>
+      カンマ区切りでいくつでも指定できる
+    </p>
+<hr>
+    <h2>p.def</h2>
+    <p class="def">
+      p要素であり、.defクラスという、両方のセレクターを同時に満たす要素にスタイルを適用させる<br>
+      くっつけて書く書き方の場合、要素型セレクター同士をくっつけることはできない
+    </p>
+    <hr>
+    <main>
+      <h2>main > h1</h2>
+      <h1>ここは対象内</h1>
+      <section>
+        <h1>ここは対象外</h1>
+      </section>
+      <p>
+        main の直下の階層の h1 という意味になる。直下以外の階層は対象外。
+      </p>
+    </main>
+    <hr>
+    <header>
+      <h2>header h1</h2>
+      <h1>ここも対象内</h1>
+      <section>
+        <h1>ここも対象内</h1>
+      </section>
+      <p>
+        header の下の階層すべての h1 という意味になる。
+      </p>
+    </header>
+    <hr>
+    <h2>p + p</h2>
+    <p>
+      p1　同じ階層の中で、pの直後にあるpという意味になります。
+    </p>
+    <p>
+      p2　このように2行だけ下線を引きたいなどといった場合に使えます。
+    </p>
+    <p>
+      p3　隣接した要素の間に何らかのスタイルを差し込みたい場合に使えます。
+    </p>
+    
+</body>
+</html>
